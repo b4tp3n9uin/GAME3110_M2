@@ -45,22 +45,27 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
+            FindObjectOfType<SoundManager>().Play("jump");
             rigid.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
 
          if (Input.GetKey(KeyCode.Space))
          {
-             if (power < 1.0f)
-             {
-                 powerGauge.fillAmount = power;
-                 power += (Time.deltaTime / 2);
-             }
-             else
-             {
-                 power = 1.0f;
-                 powerGauge.fillAmount = power;
-             }
-         }
+            //FindObjectOfType<SoundManager>().Play("shoot");
+            if (power < 1.0f)
+            {
+                powerGauge.fillAmount = power;
+                power += (Time.deltaTime / 2);
+            }
+
+            else
+            {
+                power = 1.0f;
+                powerGauge.fillAmount = power;
+            }
+
+            
+        }
 
          if (Input.GetKeyUp(KeyCode.Space))
          {
@@ -135,6 +140,10 @@ public class Player : MonoBehaviour
         {
             anim.SetTrigger("death");
         }
+        if (GameManager.Instance.player2Hp <= 0)
+        {
+            anim.SetTrigger("death");
+        }
     }
 
     private void FlipImage(float h)
@@ -170,6 +179,9 @@ public class Player : MonoBehaviour
         Vector3 pos = transform.position;
         pos += transform.forward * 10;
         Bullets mBullet;
+
+        FindObjectOfType<SoundManager>().Play("shoot");
+
         if (GameManager.Instance.IsPlayer1Turn)
         {
             mBullet = Instantiate(bullet, transform.position + new Vector3(1, 0, 0), Quaternion.identity);

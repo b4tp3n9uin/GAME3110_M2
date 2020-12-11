@@ -21,6 +21,8 @@ public class Bullets : MonoBehaviour
     {
         if(collision.CompareTag("Player") && GameManager.Instance.IsPlayer1Turn)
         {
+            FindObjectOfType<SoundManager>().Play("hurt");
+
             GameManager.Instance.player1Hp -= 20.0f;
             if (GameManager.Instance.player1Hp <= 0)
                 GameManager.Instance.IsPlayer2Win = true;
@@ -29,6 +31,8 @@ public class Bullets : MonoBehaviour
 
         if (collision.CompareTag("Player2") && !GameManager.Instance.IsPlayer1Turn)
         {
+            FindObjectOfType<SoundManager>().Play("hurt");
+
             GameManager.Instance.player2Hp -= 20.0f;
             if (GameManager.Instance.player2Hp <= 0)
                 GameManager.Instance.IsPlayer1Win = true;

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B6CF23F2-995F-F8A2-F614-071CFB5017DC}</ProjectGuid>
+    <ProjectGuid>{EA6381B0-91B1-18D7-C6EF-EE108F085BCA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,12 +65,13 @@
     <Compile Include="Assets\Examples\HighLevelTableExample.cs" />
     <Compile Include="Assets\Examples\DynamoDBBaseExample.cs" />
     <Compile Include="Assets\Examples\CognitoSyncManagerSample.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Sounds\SoundManager.cs" />
     <Compile Include="Assets\Scripts\UI\UI_MainMenu.cs" />
     <Compile Include="Assets\Scripts\Network\GameClient.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Login.cs" />
     <Compile Include="Assets\Examples\DynamoDBExample.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Sounds\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\AWSSDK\AWSSDK.SecurityToken.dll" />
@@ -667,6 +668,9 @@
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -682,13 +686,10 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{67871332-4EB4-52C6-6654-25282EB91D36}</Project>
+      <Project>{744E086F-3870-FE7C-A8B6-33893DB26473}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
