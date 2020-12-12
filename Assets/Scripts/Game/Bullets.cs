@@ -43,5 +43,13 @@ public class Bullets : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag("Obstacle"))
+        {
+            FindObjectOfType<SoundManager>().Play("obstacle");
+
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

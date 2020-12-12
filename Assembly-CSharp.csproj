@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\UI\UI_MainGame.cs" />
     <Compile Include="Assets\Scripts\Game\Bullets.cs" />
     <Compile Include="Assets\Scripts\Network\NetworkMessage.cs" />
+    <Compile Include="Assets\Scripts\Sounds\Sound.cs" />
     <Compile Include="Assets\Scripts\Game\PlayerControl.cs" />
     <Compile Include="Assets\Examples\HighLevelTableExample.cs" />
     <Compile Include="Assets\Examples\DynamoDBBaseExample.cs" />
@@ -71,7 +72,6 @@
     <Compile Include="Assets\Scripts\UI\UI_Login.cs" />
     <Compile Include="Assets\Examples\DynamoDBExample.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Sounds\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\AWSSDK\AWSSDK.SecurityToken.dll" />
