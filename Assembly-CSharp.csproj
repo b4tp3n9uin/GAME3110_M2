@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EA6381B0-91B1-18D7-C6EF-EE108F085BCA}</ProjectGuid>
+    <ProjectGuid>{5161D598-8049-D87D-CA4B-2C6C91A838CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\UI\UI_Login.cs" />
     <Compile Include="Assets\Examples\DynamoDBExample.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\UI\UI_Matchmaking.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\AWSSDK\AWSSDK.SecurityToken.dll" />
@@ -689,7 +690,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{744E086F-3870-FE7C-A8B6-33893DB26473}</Project>
+      <Project>{12CFCDD1-236E-2BEF-4C0B-B7B9AFC130BD}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

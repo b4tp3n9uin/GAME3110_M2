@@ -101,7 +101,7 @@ public class DataBase : MonoBehaviour
             }
             else
             {
-                GameManager.Instance.SceneChange("Game");
+                GameManager.Instance.SceneChange("Matchmaking");
             }
         }, null);
     }

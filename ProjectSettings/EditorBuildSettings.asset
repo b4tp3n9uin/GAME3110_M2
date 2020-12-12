@@ -6,21 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 9ec740628a8056b4094f1da62929f330
+  - enabled: 1
+    path: Assets/Scenes/Matchmaking.unity
+    guid: f46459cdbf6586d4eb38879eab5ae072
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 7f33618000a187d479fa8b5e14e3245a
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 296aa5e8fc7b5344dbea0a586a86891b
+  - enabled: 1
     path: Assets/Scenes/ClientScene.unity
     guid: a784f2ff38a3bfb43aa053f9c9211d08
   - enabled: 1
     path: Assets/Scenes/ServerScene.unity
     guid: 5b6bfd974a6bfbd44a3d9b828620e486
-  - enabled: 1
-    path: Assets/Scenes/Ending.unity
-    guid: 296aa5e8fc7b5344dbea0a586a86891b
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 7f33618000a187d479fa8b5e14e3245a
-  - enabled: 1
-    path: Assets/Scenes/Login.unity
-    guid: 9ec740628a8056b4094f1da62929f330
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
